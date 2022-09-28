@@ -6,12 +6,13 @@
   <div>
   <h1>Grande Questions</h1>
  
-    <form action="/tale2" class="cent">
-      {% for blank in blanks %}
-        <p>{{ blank }}:
-          <input name="{{ blank }}">
-        </p>
-      {% endfor %}
+    <form action="/tale2" class="cent"> 
+    {% for blank in blanks %}
+      <label for="{{ blank }}">{{ blank }} (required)</label>
+      <p>
+        <input id="{{ blank }}" name="{{ blank }}" type="text" required minlength="3" />
+      </p>
+    {% endfor %} 
 
       <button>GENERATE STORY</button>
       

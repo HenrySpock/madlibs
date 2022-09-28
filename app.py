@@ -6,6 +6,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = "ml_sec"
 
 debug = DebugToolbarExtension(app)
+app.config['TEMPLATES_AUTO_RELOAD'] = True
 
 @app.route("/choice")
 def choice():

@@ -1,2 +1,4 @@
-let blank = document.getElementsByClassName("inval").innerText
-console.log(blank)
+console.log("I'm here")
+
+let mlids = document.querySelectorAll('[id^=textbox]');
+console.log(mlids)

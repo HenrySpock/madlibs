@@ -37,6 +37,8 @@ class Story:
 
 # Here's a story to get you started
 
+# I am using these variable names to pass through as html ids. None of them are duplicate, but if they were, they would need enumeration.
+
 story1 = Story(
     ["verb", "noun", "person_you_know"],
     """You really know how to {verb} up a {noun}, {person_you_know}!"""
