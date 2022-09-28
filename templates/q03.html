@@ -1,0 +1,28 @@
+{% extends 'base.html' %} 
+{% block title %}Mad Lib Form{% endblock %}
+
+{% block content %}
+
+  <div>
+  <h1>Venti Questions</h1>
+ 
+    <form action="/tale3" class="cent">
+      {% for blank in blanks %}
+        <p>{{ blank }}:
+          <input class="inval" name="{{ blank }}">
+        </p>
+      {% endfor %}
+
+      <button>GENERATE STORY</button>
+      
+    </form>
+    
+    <form action="/choice" class="cent">
+      <button>CHOOSE ANOTHER STORY</button>
+    </form>
+
+  </div>
+{% endblock %}
+
+
+

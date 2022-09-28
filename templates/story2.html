@@ -1,0 +1,13 @@
+{% extends 'base.html' %} 
+{% block title %}Mad Lib Story{% endblock %}
+
+{% block content %}
+
+    <h1>Your Grande Mad Lib</h1>
+    <p>{{ text }}</p> 
+    <form action="/choice" class="cent">
+        <button>CHOOSE ANOTHER STORY</button>
+    </form>
+ 
+{% endblock %}
+

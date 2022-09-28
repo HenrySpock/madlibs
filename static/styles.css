@@ -1,0 +1,29 @@
+body {
+    background-color: bisque;
+    display: flex;
+    justify-content: center
+}
+
+a {
+    color: rgb(136, 228, 234);    
+}
+
+.cont, .cent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 15px
+}
+
+.cont {
+    width: 500px
+}
+
+.nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    width: 120%
+}
+
